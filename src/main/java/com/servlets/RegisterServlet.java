@@ -24,6 +24,10 @@ public class RegisterServlet extends HttpServlet {
 		String password = req.getParameter("pwd");
 		if(mobile==null || mobile.isEmpty()){
 			System.out.println("invalid mobile");
+
+		if(mail==null || mail.isEmpty()){
+			System.out.println("Invalid mail entered");
+
 		}
 		// validation of mobile
 		boolean isValidMobile = Validations.isValid(mobile);
